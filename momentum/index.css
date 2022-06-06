@@ -2,3 +2,30 @@ body {
   background-color: beige;
   text-align: center;
 }
+
+#test > button {
+  cursor: pointer;
+  margin-bottom: 30px;
+  width: 70px;
+  height: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+#test > button:hover {
+  background-color: gray;
+}
+
+#test > button:active {
+  background-color: #fff;
+}
+
+#test > div > input {
+  border: 1px solid black;
+  width: 150px;
+  height: 20px;
+  font-size: 15px;
+  outline: none;
+}

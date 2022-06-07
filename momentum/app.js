@@ -1,58 +1,29 @@
-const $title = document.querySelector('#test h1');
-const $input = document.querySelector('#test input');
-const $buttonBlue = document.querySelector('#test .blue');
-const $buttonBlack = document.querySelector('#test .black');
-$buttonBlue.style.color = 'blue';
+// querySelector
+const $loginForm = document.querySelector('#login-form');
+const $loginInput = document.querySelector('#login-form input');
+const $loginButton = document.querySelector('#login-form button');
+const $helloUser = document.querySelector('#hello-user h2');
+const $logoutBtn = document.querySelector('#hello-user button');
 
-// console.dir($title); // 태그에 쓰일수 있는 아밴트와 값 들을 확인 할 수 있다.
-
-function onChangeTilteInput(e) {
-  console.log('e.target.value:', e.target.value);
+function handleLoginBtnClick() {
+  let userName = $loginInput.value;
+  if (userName === '') {
+    alert('Please write your name.');
+  } else if (userName.length >= 10) {
+    alert('your name is too long');
+  } else {
+    $loginForm.classList.add('nonDisplay'); // CSS Class 추가(기존 CSS 유지)
+    $logoutBtn.classList.add('logoutBtnBlock');
+    $helloUser.textContent = 'Hello, ' + userName;
+  }
 }
 
-function handleButtonBlueClick(e) {
-  console.log('Click!!', e.target.innerText);
-  console.dir($title);
-  $title.style.color = 'blue';
+function handleClickLogout() {
+  $loginForm.classList.remove('nonDisplay');
+  $logoutBtn.classList.remove('logoutBtnBlock');
+  $helloUser.textContent = '';
 }
 
-function handleButtonBlackClick() {
-  $title.style.color = 'black';
-}
-
-function onMouseenter() {
-  console.log('mouse is here!!');
-  $title.innerText = 'Enter';
-}
-
-function onMouseleave() {
-  console.log('mouse is out!!');
-  $title.innerText = 'Leave';
-}
-
-function handleWindowResize() {
-  document.body.style.backgroundColor = 'tomato';
-}
-
-function handleWindowCopy() {
-  alert('copier!!');
-}
-
-function handleWindowOffline() {
-  alert('SOS No Wifi!!');
-}
-
-function handleWindowOnline() {
-  alert('Success Connected Your Wifi!!');
-}
-
-$title.addEventListener('mouseleave', onMouseleave);
-$title.addEventListener('mouseenter', onMouseenter);
-$input.addEventListener('input', onChangeTilteInput);
-$buttonBlue.addEventListener('click', handleButtonBlueClick);
-$buttonBlack.addEventListener('click', handleButtonBlackClick);
-
-window.addEventListener('resize', handleWindowResize);
-window.addEventListener('copy', handleWindowCopy);
-window.addEventListener('offline', handleWindowOffline);
-window.addEventListener('online', handleWindowOnline);
+// addEventListener
+$loginButton.addEventListener('click', handleLoginBtnClick);
+$logoutBtn.addEventListener('click', handleClickLogout);

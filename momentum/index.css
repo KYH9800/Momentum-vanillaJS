@@ -78,7 +78,7 @@ body {
 /* todo-list */
 .todo-list {
   position: fixed;
-  top: 51%;
+  top: 50.8%;
   left: 0;
   right: 0;
   text-align: start;
@@ -89,9 +89,24 @@ body {
   font-size: 20px;
   font-weight: 400;
   list-style: none;
-  height: 300px;
+  height: 340px;
   overflow: auto;
   overflow-x: hidden;
+}
+.todo-list li {
+  cursor: pointer;
+  background-color: #00000069;
+  margin-bottom: 1px;
+  padding: 9px 0;
+  vertical-align: middle;
+}
+
+.todo-list li:hover {
+  background-color: #3e3e3e7d;
+}
+
+.todo-list li > span {
+  margin-left: 15px;
 }
 
 .todo-list input {
@@ -102,4 +117,11 @@ body {
 
 .todo-list button {
   float: right;
+  margin-right: 7px;
+  border: 1px solid black;
+  width: 55px;
+  height: 27px;
+  margin-top: -1px;
+  background-color: #e2e2e2;
+  vertical-align: middle;
 }

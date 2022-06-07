@@ -1,16 +1,76 @@
+body {
+  box-sizing: border-box;
+  background: #212121;
+  background-image: url(https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Neue Haas Grotesk Text Pro', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif !important;
+}
+
 #login-form {
-  width: 100px;
-  height: 25px;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
-.nonDisplay {
+#login-form span {
+  color: #fff;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+#login-form input {
+  margin: auto;
+  margin-top: 20px;
+  outline: none;
+  caret-color: #fff;
+  color: #fff;
+  text-align: center;
+  width: 566px;
+  height: 36px;
+  font-size: 30px;
+  line-height: 2px;
+  font-weight: 500;
+  background-color: #21212100;
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.loginInputNone {
   display: none;
 }
 
-.logoutBtn {
-  display: none;
+.todo-input {
+  position: fixed;
+  top: 35%;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
-.logoutBtnBlock {
-  display: block;
+.what-to-do {
+  font-weight: 400;
+  color: #fff;
+}
+
+.todoInput {
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  outline: none;
+  caret-color: #fff;
+  color: #fff;
+  text-align: center;
+  width: 566px;
+  height: 36px;
+  font-size: 30px;
+  line-height: 2px;
+  font-weight: 500;
+  background-color: #21212100;
+  border: 0;
+  border-bottom: 1px solid #fff;
 }

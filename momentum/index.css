@@ -125,3 +125,24 @@ body {
   background-color: #e2e2e2;
   vertical-align: middle;
 }
+
+/* clock */
+#date {
+  font-weight: 300;
+  font-size: 43px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-top: 45px;
+}
+
+#clock {
+  font-weight: 300;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/* wether */

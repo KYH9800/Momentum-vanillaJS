@@ -74,3 +74,32 @@ body {
   border: 0;
   border-bottom: 1px solid #fff;
 }
+
+/* todo-list */
+.todo-list {
+  position: fixed;
+  top: 51%;
+  left: 0;
+  right: 0;
+  text-align: start;
+  max-width: 570px;
+  margin: auto;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  list-style: none;
+  height: 300px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.todo-list input {
+  margin-right: 13px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.todo-list button {
+  float: right;
+}

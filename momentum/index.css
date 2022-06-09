@@ -23,6 +23,14 @@ body {
   font-size: 50px;
 }
 
+#userName {
+  cursor: pointer;
+}
+
+#userName:hover {
+  color: rgb(131, 131, 255);
+}
+
 #login-form input {
   margin: auto;
   margin-top: 20px;
@@ -40,10 +48,6 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-.loginInputNone {
-  display: none;
-}
-
 .todo-input {
   position: fixed;
   top: 35%;
@@ -55,6 +59,7 @@ body {
 .what-to-do {
   font-weight: 400;
   color: #fff;
+  text-decoration-line: none;
 }
 
 .todoInput {
@@ -78,7 +83,7 @@ body {
 /* todo-list */
 .todo-list {
   position: fixed;
-  top: 50.8%;
+  top: 52.6%;
   left: 0;
   right: 0;
   text-align: start;
@@ -109,13 +114,12 @@ body {
   margin-left: 15px;
 }
 
-.todo-list input {
-  margin-right: 13px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.listItem {
+  margin: 15px 13px;
 }
 
 .todo-list button {
+  cursor: pointer;
   float: right;
   margin-right: 7px;
   border: 1px solid black;
@@ -124,6 +128,29 @@ body {
   margin-top: -1px;
   background-color: #e2e2e2;
   vertical-align: middle;
+}
+
+.todo-list button:hover {
+  background-color: #908d8d9c;
+  color: #fff;
+}
+
+.todo-list button:active {
+  background-color: #e2e2e2;
+  color: black;
+}
+
+/* update */
+.updateInput {
+  border: 0;
+  caret-color: #fff;
+  color: #fff;
+  background-color: #21212100;
+  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+  margin-left: 5px;
+  padding: 0 5px;
 }
 
 /* clock */
